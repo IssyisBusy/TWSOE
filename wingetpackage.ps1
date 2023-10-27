@@ -29,6 +29,12 @@ $apps = @(
     @{name = "cURL.cURL" },   
     @{name = "Spotify.Spotify" },  
     @{name = "Yarn.Yarn" },
+    @{name = "Obsidian.Obsidian" },
+    @{name = "Cisco.WebexTeams" },
+    @{name = "Python.Python.3.11" },
+    @{name = "Microsoft.Edge" },
+    @{name = "VMware.WorkstationPlayer" },
+    @{name = "Microsoft.WindowsTerminal" }
 );
 Foreach ($app in $apps) {
     $listApp = winget list --exact -q $app.name
